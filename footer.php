@@ -3,7 +3,6 @@
         </div><!-- end .row -->
     </div>
 </div><!-- end #body -->
-
 <footer id="colophon" class="site-footer" role="contentinfo">
   <hr class="pc">
   <hr class="pc">
@@ -30,8 +29,13 @@
     <div class="copyright">
       <div class="wrpr">
         <p>
-          <span class="poppin_200">&copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>.
-    <?php _e('由 <a href="http://www.typecho.org">Typecho</a> 强力驱动'); ?> <span class="blog_icp">Theme By <a href="http://www.wikimoe.com" target="_blank">Hiroki</a></span></p>
+        
+          <span class="poppin_200">
+          <?php echo "网站勉强运行了"; echo getBuildTime(); ?>
+           <br>
+           &copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>.
+           <?php _e('<a href="http://www.beian.miit.gov.cn">粤ICP备17011660号</a>'); ?>
+    </p>
         <p><span class="poppin_200"><a href="http://www.miibeian.gov.cn" target="_blank" style="color: inherit;"><?php $this->options->icp() ?></a><?php $this->options->Tongji() ?></span></p>
       </div>
     </div>

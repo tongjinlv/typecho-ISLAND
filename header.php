@@ -1,6 +1,21 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <!DOCTYPE HTML>
 <html class="no-js">
+<script type="text/javascript">
+        function button_search(){
+            var G=document.getElementById('input_search').value;
+            G="http://"+window.location.host+"/index.php/search/"+G+"/";
+            window.location.href=G;
+        }
+        function key_search(e){
+          var evt = window.event || e; 
+          if (evt.keyCode == 13){
+            var G=document.getElementById('input_search').value;
+            G="http://"+window.location.host+"/index.php/search/"+G+"/";
+            window.location.href=G;
+          }
+        }
+    </script>
 <head>
     <meta charset="<?php $this->options->charset(); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -72,7 +87,12 @@
         </a>
       </li>
       <?php endwhile; ?>
-
+      <li class="island_logo_box">
+      <div class="search">
+            <input type="text" placeholder="请输入..." name="" id="input_search" value="" onkeydown="key_search(event);"/>
+            <button onclick="button_search()"><i>搜索</i></button>
+        </div>
+        </li>
     </ul>
   </div>
 </header>

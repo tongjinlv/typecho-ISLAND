@@ -376,7 +376,6 @@ a.tag_item {
   background-color: #000;
   padding: 10px 14px;
   margin-right: 5px;
-  margin-bottom: 10px;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
@@ -391,9 +390,6 @@ a.tag_item:hover {
 }
 .categories_list_body .archive-title a{
   color: #23aaff;
-}
-.content_cate_box{
-  margin-bottom: 40px;
 }
 /* 归档 */
 .archive .archive_posts li{
@@ -529,26 +525,6 @@ pre, code {
   text-overflow:ellipsis;
   max-width: 48%;
   text-align: right;
-}
-
-table {
-  border: 1px solid #ddd;
-  width: 100%;
-  background: rgba(255,255,255,0.8);
-}
-table > thead > tr > th,
-table > tbody > tr > th,
-table > tfoot > tr > th,
-table > thead > tr > td,
-table > tbody > tr > td,
-table > tfoot > tr > td {
-  border: 1px solid #ddd;
-  padding: 10px;
-}
-table > thead > tr > th,
-table > thead > tr > td {
-  border-bottom-width: 2px;
-  padding: 10px;
 }
 /* 404 */
 .error_tips{
